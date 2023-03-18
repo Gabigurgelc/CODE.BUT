@@ -1,0 +1,97 @@
+  
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: rgba(25, 25, 25);
+    }
+
+   @font-face {
+    font-family: pixels;
+    src: url(poxel-font.ttf);
+   }
+
+   
+   #code{
+    width: 300px;
+  height: '';
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+   }
+
+   
+   .btn{
+   border: 1px solid #444;
+   background: transparent;
+   color: #fff;
+   padding: 10px 20px;
+  
+   }
+
+   a{
+    position: relative;
+    background: transparent;
+    color: white;
+    text-decoration: #fff;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 10px 30px;
+    transition: 0.5s;
+   }
+
+   a:hover{
+    letter-spacing: 0.25em;
+   }
+
+  a::before{
+    content: '';
+    position: absolute;
+    inset: 2px;
+  }
+
+
+    .liner{
+        border-right: 2px solid rgba(255, 255, 255, .75);
+        color: rgba(255, 255, 255, .75);
+         font-family: pixels;
+         font-size: 3em;
+         text-align: center;
+         margin: auto;
+         white-space: nowrap;
+         overflow: hidden;
+    }
+
+ .typing-animation{
+    animation: blinkCursor 500ms steps(40) infinite normal, typing 4s steps(40) 1s normal both;
+ }
+
+ @keyframes typing {
+  from{
+    width: 0;
+  }    
+   to{
+    width: 6em;
+   }
+ }
+
+
+    @keyframes blinkCursor {
+        from {
+border-right-color: rgba(255, 255, 255, .75);
+        }
+    to{ 
+        border-right-color: transparent;
+    }
+    }
+
+
+    
+
